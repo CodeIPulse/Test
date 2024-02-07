@@ -13,7 +13,6 @@ info() #displays these options again.
 #To create a vector containing the numbers 1.1, 9, and 3.14
 c(1.1, 9, 3.14)
 
-
 getwd()   #Determine which directory your R session is using as its current working directory using.
 ls()    #List all the objects in your local workspace
 #list.files(), dir() #List all the files in your working directory
