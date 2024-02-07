@@ -15,3 +15,5 @@ sub2<-subset(hw1, Month==6, select= "Temp")         #Subsetting the temp col bas
 mean(sub2[,])                                      #Mean of Temp col in the subset
 sub3<-subset(hw1, Month==5, select= "Ozone")
 max(na.omit(sub3[,]))                               #Max of Ozone col subset after omitting "NA" values
+
+
