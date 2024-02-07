@@ -16,7 +16,7 @@ ncol(frame)   #Gives number of columns in data frame
 
 x<- (1:3)
 names (x)<- c("col1", "col2", "col3")   #Column titles
-m<-matrix(1:8, nrow=2, ncol=4)
+m<-matrix(1:8, nrow=2, ncol=4) 
 dimnames(m)<- list(c("q", "w"), c("a", "b","c", "d"))   #first element in list gives row names and second gives column names
 
 read.table(file, readLines())
