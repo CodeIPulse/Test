@@ -9,7 +9,6 @@ bye() #causes swirl to exit. Your progress will be saved.
 main() #returns you to swirl's main menu.
 info() #displays these options again.
 
-
 #The easiest way to create a vector is with the c() function, which stands for 'concatenate' or 'combine'. 
 #To create a vector containing the numbers 1.1, 9, and 3.14
 c(1.1, 9, 3.14)
