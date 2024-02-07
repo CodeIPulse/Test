@@ -33,4 +33,26 @@ dir.create(file.path('testdir2', 'testdir3'), recursive = TRUE)
 #Create a directory in the current working directory called "testdir2" and a subdirectory for it called "testdir3", 
 #all in one command by using dir.create() and file.path()
 
+seq(from=a, to=b, by=inc, length=len)   #sequence of numbers generated from a to b, with increment inc and length len; includes a and b.
+seq(along.with = my_seq)      #takes length of seq called my_seq
+rep(x, time =len)           #makes a list of repetitive elements x
+paste(my_char, collapse = " ")    #my_char is a vector ("My", "name", "is"), and collapse joins the elements separated by a " "
+paste("Hello", "world!", sep = " ")      #Joins the "", separated by a " "
+paste(1:3, c("X", "Y", "Z"), sep="")      #if 1:3 and c() are different lengths, the shorter one is recycled
+
+x[a:b]                  #In x elemnets a:b including a and b
+y <- x[!is.na(x)]       #makes a vector removing all the NA elements from x
+x[!is.na(x) & x > 0]    # removes all NA and negative values 
+x[-c(2, 10)]              #or x[c(-2, -10)]     # gives all elements of x except 2nd ,10th
+vect <- c(foo = 11, bar = 2, norf = NA)   #assigns column "names" as foo, bar, norf
+names(vect)                               #returns the names of columns of vect
+names(vect2) <- c("foo", "bar", "norf")   #can give names after making the initial vector too
+
+dim(vect)<- c(r,c)        #Converts a vector into a matrix of r rows and c cols
+matrix(data = NA, nrow = 1, ncol = 1, byrow = FALSE, dimnames = NULL)   #Default matrix generator
+cbind(patients, my_matrix)    #Row names, but a matrix can only have one data class...!
+data.frame(patients, my_matrix)           #Data frame, with patients as row names, and no col names
+
+any(ints<0)             #any() function to see if any of the elements of ints are less than zero
+which(ints>7)          #which() function to find the indices of ints that are greater than 7
 
